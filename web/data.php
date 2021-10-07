@@ -12,13 +12,13 @@ function blogGetCategory(): array
             'category_id' => 2,
             'name'        => 'Home',
             'url'         => 'home',
-            'products'    => [3, 4, 5]
+            'posts'    => [3, 4, 5]
         ],
         3 => [
             'category_id' => 3,
             'name'        => 'Free time',
             'url'         => 'freetime',
-            'products'    => [2, 4, 6]
+            'posts'    => [2, 4, 6]
         ]
     ];
 }
@@ -30,7 +30,7 @@ function blogGetPost(): array
             'post_id'  => 1,
             'title'        => 'Post 1',
             'url'         => 'post-1',
-            'text' => 'Product 1 Description',
+            'text' => 'Post 1 Description',
             'author' => 'Author1',
             'date'       => '10.03.21'
         ],
@@ -38,7 +38,7 @@ function blogGetPost(): array
             'post_id'  => 2,
             'title'        => 'Post 2',
             'url'         => 'post-2',
-            'text' => 'Product 2 Description',
+            'text' => 'Post2 Description',
             'author' => 'Author2',
             'date'       => '10.03.21'
         ],
@@ -46,7 +46,7 @@ function blogGetPost(): array
             'post_id'  => 3,
             'title'        => 'Post 3',
             'url'         => 'post-3',
-            'text' => 'Product 3 Description',
+            'text' => 'Post 3 Description',
             'author' => 'Author3',
             'date'       => '10.03.21'
         ],
@@ -54,7 +54,7 @@ function blogGetPost(): array
             'post_id'  => 4,
             'title'        => 'Post 4',
             'url'         => 'post-4',
-            'text' => 'Product 4 Description',
+            'text' => 'Post 4 Description',
             'author' => 'Author4',
             'date'       => '10.03.21'
         ],
@@ -62,7 +62,7 @@ function blogGetPost(): array
             'post_id'  => 5,
             'title'        => 'Post 5',
             'url'         => 'post-5',
-            'text' => 'Product 5 Description',
+            'text' => 'Post 5 Description',
             'author' => 'Author5',
             'date'       => '10.03.21'
         ],
@@ -70,9 +70,54 @@ function blogGetPost(): array
             'post_id'  => 6,
             'title'        => 'Post 6',
             'url'         => 'post-6',
-            'text' => 'Product 6 Description',
+            'text' => 'Post 6 Description',
             'author' => 'Author6',
             'date'       => '10.03.21'
         ]
     ];
+}
+
+function blogGetCategoryByUrl(string $url): ?array
+{
+    $data = array_filter(
+        blogGetCategory(),
+        static function ($category) use ($url) {
+            return $category['url'] === $url;
+        }
+    );
+
+    return array_pop($data);
+}
+function blogGetPostByUrl(string $url): ?array
+{
+    $data = array_filter(
+        blogGetPost(),
+        static function ($post) use ($url) {
+            return $post['url'] === $url;
+        }
+    );
+
+    return array_pop($data);
+}
+
+function blogGetCategoryPost(int $categoryId): array
+{
+    $categories = blogGetCategory();
+
+    if (!isset($categories[$categoryId])) {
+        throw new InvalidArgumentException("Category with ID $categoryId does not exist");
+    }
+
+    $postsForCategory = [];
+    $posts = blogGetPost();
+
+    foreach ($categories[$categoryId]['posts'] as $postId) {
+        if (!isset($posts[$postId])) {
+            throw new InvalidArgumentException("Product with ID $productId from category $categoryId does not exist");
+        }
+
+        $postsForCategory[] = $posts[$postId];
+    }
+
+    return $postsForCategory;
 }

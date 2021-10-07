@@ -1,5 +1,6 @@
 <?php
 require_once 'data.php';
+//require_once 'index.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,33 +41,23 @@ require_once 'data.php';
 
     <main>
         <section title="Posts">
-<!--            <h1>Blog-Category 1</h1>-->
-            <h1><?php $arr=blogGetCategory(); echo $arr[1]['name']; ?></h1>
+        <h1>--><?= $data['name'] ?></h1>
+
             <div class="post-list">
-                <div class="post">
-                    <a href="/post-1-url" title="Post 1">
-                        <img src="/product-placeholder.jpeg" alt="Post 1" width="200"/>
-                    </a>
-                    <a href="/post-1-url" title="Post 1">Post 1</a>
-                    <span>03.10.21</span>
-                    <a href="/contact-us"><button type="button">Comment</button></a>
-                </div>
-                <div class="post">
-                    <a href="/post-2-url" title="Post 2">
-                        <img src="/product-placeholder.jpeg" alt="Post 2" width="200"/>
-                    </a>
-                    <a href="/post-2-url" title="Post 2">Post 2</a>
-                    <span>03.10.21</span>
-                    <a href="/contact-us"><button type="button">Comment</button></a>
-                </div>
-                <div class="post">
-                    <a href="/post-3-url" title="Post 3">
-                        <img src="/product-placeholder.jpeg" alt="Post 3" width="200"/>
-                    </a>
-                    <a href="/post-3-url" title="Post 3">Post 3</a>
-                    <span>03.10.21</span>
-                    <a href="/contact-us"><button type="button">Comment</button></a>
-                </div>
+                <?php foreach (blogGetCategoryPost($data['category_id']) as $post) : ?>
+                    <div class="post">
+                        <a href="/<?= $post['url'] ?>" title="<?= $post['title'] ?>">
+                            <img src="/product-placeholder.jpeg" alt="<?= $post['title'] ?>" width="200"/>
+                        </a>
+                        <p><a href="/<?= $post['url'] ?>" title="<?= $post['title'] ?>"><?= $post['title'] ?></a></p>
+                        <p>By <span><?= $post['author']?></span> </p>
+                        <p><?= $post['text'] ?></p>
+
+                        <p> <span><?= $post['date']?></span></p>
+                        <a href="/contact-us"><button type="button">Comment</button></a>
+                    </div>
+                <?php endforeach; ?>
+
             </div>
         </section>
     </main>
@@ -81,7 +72,7 @@ require_once 'data.php';
                 <a href="/terms-and-conditions">Terms & Conditions</a>
             </li>
             <li>
-                <a href="/contact-us">Leave your post</a>
+                <a href="/leave-post">Leave your post</a>
             </li>
         </ul>
     </nav>

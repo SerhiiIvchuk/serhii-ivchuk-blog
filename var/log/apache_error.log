@@ -1,3 +1,177 @@
 [Thu Oct 07 11:47:55.032712 2021] [autoindex:error] [pid 17] [client 172.17.0.2:53688] AH01276: Cannot serve directory /var/www/html/web/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
 [Thu Oct 07 11:49:34.067229 2021] [autoindex:error] [pid 20] [client 172.17.0.2:53716] AH01276: Cannot serve directory /var/www/html/web/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
 [Thu Oct 07 13:48:55.688100 2021] [php7:notice] [pid 18] [client 172.17.0.2:54698] PHP Fatal error:  Uncaught Error: Call to undefined function blogGetCategory() in /var/www/html/web/home.php:29\nStack trace:\n#0 {main}\n  thrown in /var/www/html/web/home.php on line 29
+[Thu Oct 07 15:03:32.740729 2021] [php7:notice] [pid 19] [client 172.17.0.2:55216] PHP Parse error:  syntax error, unexpected 'blogGetPostByUrl' (T_STRING) in /var/www/html/web/data.php on line 91
+[Thu Oct 07 15:04:12.251759 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:04:12.251794 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Stack trace:
+[Thu Oct 07 15:04:12.251803 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:04:12.251833 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:04:12.251840 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Stack trace:
+[Thu Oct 07 15:04:12.251846 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:04:12.251865 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 45
+[Thu Oct 07 15:04:12.251871 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Stack trace:
+[Thu Oct 07 15:04:12.251877 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:04:12.251892 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 45
+[Thu Oct 07 15:04:12.251898 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Stack trace:
+[Thu Oct 07 15:04:12.251904 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:04:12.251967 2021] [php7:notice] [pid 18] [client 172.17.0.2:55224] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to blogGetCategoryPost() must be of the type int, null given, called in /var/www/html/web/category.php on line 45 and defined in /var/www/html/web/data.php:103\nStack trace:\n#0 /var/www/html/web/category.php(45): blogGetCategoryPost(NULL)\n#1 {main}\n  thrown in /var/www/html/web/data.php on line 103
+[Thu Oct 07 15:08:27.167702 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:08:27.167742 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Stack trace:
+[Thu Oct 07 15:08:27.167753 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:08:27.167802 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:08:27.167819 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Stack trace:
+[Thu Oct 07 15:08:27.167827 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:08:27.167850 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 45
+[Thu Oct 07 15:08:27.167858 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Stack trace:
+[Thu Oct 07 15:08:27.167876 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:08:27.167895 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 45
+[Thu Oct 07 15:08:27.167902 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Stack trace:
+[Thu Oct 07 15:08:27.167908 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:08:27.167998 2021] [php7:notice] [pid 20] [client 172.17.0.2:55260] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to blogGetCategoryPost() must be of the type int, null given, called in /var/www/html/web/category.php on line 45 and defined in /var/www/html/web/data.php:103\nStack trace:\n#0 /var/www/html/web/category.php(45): blogGetCategoryPost(NULL)\n#1 {main}\n  thrown in /var/www/html/web/data.php on line 103
+[Thu Oct 07 15:16:52.388258 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:16:52.388298 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Stack trace:
+[Thu Oct 07 15:16:52.388307 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:16:52.388359 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:16:52.388367 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Stack trace:
+[Thu Oct 07 15:16:52.388373 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:16:52.388390 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 45
+[Thu Oct 07 15:16:52.388395 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Stack trace:
+[Thu Oct 07 15:16:52.388401 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:16:52.388413 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 45
+[Thu Oct 07 15:16:52.388417 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Stack trace:
+[Thu Oct 07 15:16:52.388421 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:16:52.388494 2021] [php7:notice] [pid 23] [client 172.17.0.2:55398] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to blogGetCategoryPost() must be of the type int, null given, called in /var/www/html/web/category.php on line 45 and defined in /var/www/html/web/data.php:103\nStack trace:\n#0 /var/www/html/web/category.php(45): blogGetCategoryPost(NULL)\n#1 {main}\n  thrown in /var/www/html/web/data.php on line 103
+[Thu Oct 07 15:23:23.102525 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:23:23.102567 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP Stack trace:
+[Thu Oct 07 15:23:23.102579 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:23:23.102630 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:23:23.102638 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP Stack trace:
+[Thu Oct 07 15:23:23.102646 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:23:23.123776 2021] [php7:notice] [pid 22] [client 172.17.0.2:55428] PHP Fatal error:  Uncaught Error: Call to undefined function catalogGetProduct() in /var/www/html/web/data.php:94\nStack trace:\n#0 /var/www/html/web/index.php(20): blogGetPostByUrl('product-placeho...')\n#1 {main}\n  thrown in /var/www/html/web/data.php on line 94, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 15:24:31.196991 2021] [php7:notice] [pid 19] [client 172.17.0.2:55440] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:24:31.197028 2021] [php7:notice] [pid 19] [client 172.17.0.2:55440] PHP Stack trace:
+[Thu Oct 07 15:24:31.197037 2021] [php7:notice] [pid 19] [client 172.17.0.2:55440] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:24:31.197061 2021] [php7:notice] [pid 19] [client 172.17.0.2:55440] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:24:31.197066 2021] [php7:notice] [pid 19] [client 172.17.0.2:55440] PHP Stack trace:
+[Thu Oct 07 15:24:31.197072 2021] [php7:notice] [pid 19] [client 172.17.0.2:55440] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:25:23.105338 2021] [php7:notice] [pid 20] [client 172.17.0.2:55452] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:25:23.105376 2021] [php7:notice] [pid 20] [client 172.17.0.2:55452] PHP Stack trace:
+[Thu Oct 07 15:25:23.105385 2021] [php7:notice] [pid 20] [client 172.17.0.2:55452] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:25:23.105414 2021] [php7:notice] [pid 20] [client 172.17.0.2:55452] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 15:25:23.105421 2021] [php7:notice] [pid 20] [client 172.17.0.2:55452] PHP Stack trace:
+[Thu Oct 07 15:25:23.105427 2021] [php7:notice] [pid 20] [client 172.17.0.2:55452] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 15:27:32.207823 2021] [php7:notice] [pid 23] [client 172.17.0.2:55470] PHP Fatal error:  Uncaught Error: Call to undefined function catalogGetProduct() in /var/www/html/web/data.php:94\nStack trace:\n#0 /var/www/html/web/index.php(20): blogGetPostByUrl('post-3')\n#1 {main}\n  thrown in /var/www/html/web/data.php on line 94, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 15:27:36.899339 2021] [php7:notice] [pid 23] [client 172.17.0.2:55470] PHP Fatal error:  Uncaught Error: Call to undefined function catalogGetProduct() in /var/www/html/web/data.php:94\nStack trace:\n#0 /var/www/html/web/index.php(20): blogGetPostByUrl('post-3')\n#1 {main}\n  thrown in /var/www/html/web/data.php on line 94, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:26:02.167005 2021] [php7:notice] [pid 22] [client 172.17.0.2:56502] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 18:26:02.167108 2021] [php7:notice] [pid 22] [client 172.17.0.2:56502] PHP Stack trace:
+[Thu Oct 07 18:26:02.167131 2021] [php7:notice] [pid 22] [client 172.17.0.2:56502] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:26:02.167209 2021] [php7:notice] [pid 22] [client 172.17.0.2:56502] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 18:26:02.167222 2021] [php7:notice] [pid 22] [client 172.17.0.2:56502] PHP Stack trace:
+[Thu Oct 07 18:26:02.167232 2021] [php7:notice] [pid 22] [client 172.17.0.2:56502] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:28:24.789143 2021] [php7:notice] [pid 17] [client 172.17.0.2:56518] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 43
+[Thu Oct 07 18:28:24.789171 2021] [php7:notice] [pid 17] [client 172.17.0.2:56518] PHP Stack trace:
+[Thu Oct 07 18:28:24.789179 2021] [php7:notice] [pid 17] [client 172.17.0.2:56518] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:28:24.789216 2021] [php7:notice] [pid 17] [client 172.17.0.2:56518] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 43
+[Thu Oct 07 18:28:24.789230 2021] [php7:notice] [pid 17] [client 172.17.0.2:56518] PHP Stack trace:
+[Thu Oct 07 18:28:24.789236 2021] [php7:notice] [pid 17] [client 172.17.0.2:56518] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:32:08.730857 2021] [php7:notice] [pid 18] [client 172.17.0.2:56540] PHP Fatal error:  Uncaught Error: Call to undefined function catalogGetProduct() in /var/www/html/web/data.php:94\nStack trace:\n#0 /var/www/html/web/index.php(20): blogGetPostByUrl('category.php')\n#1 /var/www/html/web/category.php(3): require_once('/var/www/html/w...')\n#2 {main}\n  thrown in /var/www/html/web/data.php on line 94
+[Thu Oct 07 18:32:56.203079 2021] [php7:notice] [pid 20] [client 172.17.0.2:56544] PHP Fatal error:  Uncaught Error: Call to undefined function blogGetProduct() in /var/www/html/web/data.php:94\nStack trace:\n#0 /var/www/html/web/index.php(20): blogGetPostByUrl('category.php')\n#1 /var/www/html/web/category.php(3): require_once('/var/www/html/w...')\n#2 {main}\n  thrown in /var/www/html/web/data.php on line 94
+[Thu Oct 07 18:34:39.035102 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29
+[Thu Oct 07 18:34:39.035140 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP Stack trace:
+[Thu Oct 07 18:34:39.035149 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:34:39.035157 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP   2. require_once() /var/www/html/web/category.php:3
+[Thu Oct 07 18:34:39.035232 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Success in /var/www/html/web/index.php on line 29
+[Thu Oct 07 18:34:39.035242 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP Stack trace:
+[Thu Oct 07 18:34:39.035248 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:34:39.035255 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP   2. require_once() /var/www/html/web/category.php:3
+[Thu Oct 07 18:34:39.035282 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29
+[Thu Oct 07 18:34:39.035291 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP Stack trace:
+[Thu Oct 07 18:34:39.035315 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:34:39.035324 2021] [php7:notice] [pid 21] [client 172.17.0.2:56558] PHP   2. require_once() /var/www/html/web/category.php:3
+[Thu Oct 07 18:35:14.818983 2021] [php7:notice] [pid 23] [client 172.17.0.2:56562] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 44
+[Thu Oct 07 18:35:14.819013 2021] [php7:notice] [pid 23] [client 172.17.0.2:56562] PHP Stack trace:
+[Thu Oct 07 18:35:14.819021 2021] [php7:notice] [pid 23] [client 172.17.0.2:56562] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:35:14.819053 2021] [php7:notice] [pid 23] [client 172.17.0.2:56562] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 44
+[Thu Oct 07 18:35:14.819064 2021] [php7:notice] [pid 23] [client 172.17.0.2:56562] PHP Stack trace:
+[Thu Oct 07 18:35:14.819073 2021] [php7:notice] [pid 23] [client 172.17.0.2:56562] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:37:46.616758 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29
+[Thu Oct 07 18:37:46.616796 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP Stack trace:
+[Thu Oct 07 18:37:46.616803 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 18:37:46.616852 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29
+[Thu Oct 07 18:37:46.616869 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP Stack trace:
+[Thu Oct 07 18:37:46.616874 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 18:37:46.616890 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29
+[Thu Oct 07 18:37:46.616902 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP Stack trace:
+[Thu Oct 07 18:37:46.616906 2021] [php7:notice] [pid 17] [client 172.17.0.2:56574] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 18:38:00.079044 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079080 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079092 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079177 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079190 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079198 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079226 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079240 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:38:00.079245 2021] [php7:notice] [pid 19] [client 172.17.0.2:56584] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:42:58.689104 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Notice:  Undefined variable: data in /var/www/html/web/category.php on line 44
+[Thu Oct 07 18:42:58.689147 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Stack trace:
+[Thu Oct 07 18:42:58.689154 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:42:58.689234 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/web/category.php on line 44
+[Thu Oct 07 18:42:58.689243 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Stack trace:
+[Thu Oct 07 18:42:58.689251 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:42:58.920503 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920535 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920544 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920642 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920660 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920666 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920702 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920715 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:42:58.920720 2021] [php7:notice] [pid 18] [client 172.17.0.2:56630] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/category.php
+[Thu Oct 07 18:49:36.607847 2021] [php7:notice] [pid 23] [client 172.17.0.2:56676] PHP Notice:  Undefined index: REDIRECT_URL in /var/www/html/web/category.php on line 45
+[Thu Oct 07 18:49:36.607901 2021] [php7:notice] [pid 23] [client 172.17.0.2:56676] PHP Stack trace:
+[Thu Oct 07 18:49:36.607915 2021] [php7:notice] [pid 23] [client 172.17.0.2:56676] PHP   1. {main}() /var/www/html/web/category.php:0
+[Thu Oct 07 18:49:47.947333 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947376 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947385 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947485 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947495 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947502 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947546 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947563 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:49:47.947570 2021] [php7:notice] [pid 22] [client 172.17.0.2:56680] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.603973 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604041 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604052 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604277 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604307 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604313 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604359 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604368 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 18:50:01.604373 2021] [php7:notice] [pid 17] [client 172.17.0.2:56684] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/home.php
+[Thu Oct 07 19:14:30.571082 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571127 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571141 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571283 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571296 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571306 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571366 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571377 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:14:30.571385 2021] [php7:notice] [pid 18] [client 172.17.0.2:56826] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/freetime
+[Thu Oct 07 19:15:38.656259 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29
+[Thu Oct 07 19:15:38.656308 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP Stack trace:
+[Thu Oct 07 19:15:38.656321 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:15:38.656440 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29
+[Thu Oct 07 19:15:38.656451 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP Stack trace:
+[Thu Oct 07 19:15:38.656457 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:15:38.656500 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29
+[Thu Oct 07 19:15:38.656521 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP Stack trace:
+[Thu Oct 07 19:15:38.656527 2021] [php7:notice] [pid 20] [client 172.17.0.2:56834] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:21:42.435082 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435117 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435127 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435230 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435240 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435248 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435292 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435309 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:21:42.435316 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/

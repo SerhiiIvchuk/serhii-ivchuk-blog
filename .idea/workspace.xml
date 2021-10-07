@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fdd8d5-4ded-4f8b-aef3-35eda350d6f0" name="Changes" comment="Commit initial">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/log/apache_error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/contact-us.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/log/apache_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/apache_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/leavepost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,16 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="serhii-ivchuk-blog.local" id="7a1d9b7f-39da-4b69-be6d-07e4167470b5" name="serhii-ivchuk-blog.local" port="443" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/web" remote-root="/var/www/html/web" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="ProjectId" id="1z7qSXA8YDRKr2096nwZJxfdmo8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -74,7 +83,7 @@
       <workItem from="1633509474865" duration="693000" />
       <workItem from="1633605564715" duration="753000" />
       <workItem from="1633606408205" duration="4667000" />
-      <workItem from="1633613658850" duration="1353000" />
+      <workItem from="1633613658850" duration="10300000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial">
       <created>1633608544964</created>

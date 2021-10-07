@@ -82,7 +82,7 @@ require_once 'data.php';
                     <a href="/terms-and-conditions">Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="/contact-us">Leave your post</a>
+                    <a href="/leave-post">Leave your post</a>
                 </li>
             </ul>
         </nav>
