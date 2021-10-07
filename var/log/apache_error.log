@@ -175,3 +175,41 @@
 [Thu Oct 07 19:21:42.435292 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 29, referer: https://serhii-ivchuk-blog.local/
 [Thu Oct 07 19:21:42.435309 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
 [Thu Oct 07 19:21:42.435316 2021] [php7:notice] [pid 23] [client 172.17.0.2:56862] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:50:55.954729 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Warning:  require_once(/var/www/html/web/data.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 4
+[Thu Oct 07 19:50:55.954783 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Stack trace:
+[Thu Oct 07 19:50:55.954797 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:50:55.954897 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/web/data.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 4
+[Thu Oct 07 19:50:55.954917 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Stack trace:
+[Thu Oct 07 19:50:55.954933 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:50:56.052829 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Warning:  require_once(data.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 4, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:50:56.052869 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:50:56.052880 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:50:56.052950 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Fatal error:  require_once(): Failed opening required 'data.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 4, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:50:56.052961 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:50:56.052969 2021] [php7:notice] [pid 19] [client 172.17.0.2:57244] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:51:14.405789 2021] [php7:notice] [pid 18] [client 172.17.0.2:57252] PHP Warning:  require_once(data.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 4
+[Thu Oct 07 19:51:14.405836 2021] [php7:notice] [pid 18] [client 172.17.0.2:57252] PHP Stack trace:
+[Thu Oct 07 19:51:14.405877 2021] [php7:notice] [pid 18] [client 172.17.0.2:57252] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:51:14.405961 2021] [php7:notice] [pid 18] [client 172.17.0.2:57252] PHP Fatal error:  require_once(): Failed opening required 'data.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 4
+[Thu Oct 07 19:51:14.405971 2021] [php7:notice] [pid 18] [client 172.17.0.2:57252] PHP Stack trace:
+[Thu Oct 07 19:51:14.405979 2021] [php7:notice] [pid 18] [client 172.17.0.2:57252] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 19:55:20.013126 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP Warning:  require_once(data.php): failed to open stream: No such file or directory in /var/www/html/src/pages/category.php on line 2, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013162 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013171 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013177 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP   2. require_once() /var/www/html/web/index.php:37, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013182 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP   3. require_once() /var/www/html/src/page.php:42, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013249 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP Fatal error:  require_once(): Failed opening required 'data.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/pages/category.php on line 2, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013257 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013263 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013269 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP   2. require_once() /var/www/html/web/index.php:37, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:55:20.013274 2021] [php7:notice] [pid 19] [client 172.17.0.2:57286] PHP   3. require_once() /var/www/html/src/page.php:42, referer: https://serhii-ivchuk-blog.local/
+[Thu Oct 07 19:56:37.705765 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP Warning:  require_once(data.php): failed to open stream: No such file or directory in /var/www/html/src/pages/leavepost.php on line 2, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705804 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705813 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705820 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP   2. require_once() /var/www/html/web/index.php:37, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705826 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP   3. require_once() /var/www/html/src/page.php:42, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705895 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP Fatal error:  require_once(): Failed opening required 'data.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/pages/leavepost.php on line 2, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705904 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP Stack trace:, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705911 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705931 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP   2. require_once() /var/www/html/web/index.php:37, referer: https://serhii-ivchuk-blog.local/work
+[Thu Oct 07 19:56:37.705936 2021] [php7:notice] [pid 22] [client 172.17.0.2:57316] PHP   3. require_once() /var/www/html/src/page.php:42, referer: https://serhii-ivchuk-blog.local/work

@@ -7,11 +7,12 @@
     <list default="true" id="13fdd8d5-4ded-4f8b-aef3-35eda350d6f0" name="Changes" comment="Commit initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/apache_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/apache_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/leavepost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/data.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/leavepost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/post.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,7 +92,7 @@
       <workItem from="1633509474865" duration="693000" />
       <workItem from="1633605564715" duration="753000" />
       <workItem from="1633606408205" duration="4667000" />
-      <workItem from="1633613658850" duration="10300000" />
+      <workItem from="1633613658850" duration="12561000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial">
       <created>1633608544964</created>
