@@ -1,0 +1,91 @@
+<?php
+require_once 'data.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>serhii.i blog</title>
+    <style>
+        header,
+        main,
+        footer {
+            border: 1px dashed black;
+        }
+
+        .post-list {
+            display: flex;
+        }
+
+        .post-list .post {
+            max-width: 30%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="/" title="Serhii Ivchuk blog">
+        <img src="logo.jpg" alt="Serhii Ivchuk blog  Logo" width="200"/>
+    </a>
+    <nav>
+        <ul>
+            <?php foreach (blogGetCategory() as $category) : ?>
+                <li>
+                    <a href="/<?= $category['url'] ?>"><?= $category['name'] ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section title="Posts">
+<!--            <h1>Blog-Category 1</h1>-->
+            <h1><?php $arr=blogGetCategory(); echo $arr[1]['name']; ?></h1>
+            <div class="post-list">
+                <div class="post">
+                    <a href="/post-1-url" title="Post 1">
+                        <img src="/product-placeholder.jpeg" alt="Post 1" width="200"/>
+                    </a>
+                    <a href="/post-1-url" title="Post 1">Post 1</a>
+                    <span>03.10.21</span>
+                    <a href="/contact-us"><button type="button">Comment</button></a>
+                </div>
+                <div class="post">
+                    <a href="/post-2-url" title="Post 2">
+                        <img src="/product-placeholder.jpeg" alt="Post 2" width="200"/>
+                    </a>
+                    <a href="/post-2-url" title="Post 2">Post 2</a>
+                    <span>03.10.21</span>
+                    <a href="/contact-us"><button type="button">Comment</button></a>
+                </div>
+                <div class="post">
+                    <a href="/post-3-url" title="Post 3">
+                        <img src="/product-placeholder.jpeg" alt="Post 3" width="200"/>
+                    </a>
+                    <a href="/post-3-url" title="Post 3">Post 3</a>
+                    <span>03.10.21</span>
+                    <a href="/contact-us"><button type="button">Comment</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about-us">About this blog</a>
+            </li>
+            <li>
+                <a href="/terms-and-conditions">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="/contact-us">Leave your post</a>
+            </li>
+        </ul>
+    </nav>
+    <p>© Open tag 2021. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

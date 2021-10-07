@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13fdd8d5-4ded-4f8b-aef3-35eda350d6f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/serhii-ivchuk-blog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-rebuild.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-sync.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/composer-proxy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/virtual-host.conf" afterDir="false" />
+    <list default="true" id="13fdd8d5-4ded-4f8b-aef3-35eda350d6f0" name="Changes" comment="Commit initial">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/var/log/apache_error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/hello-world.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/contact-us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1z7qSXA8YDRKr2096nwZJxfdmo8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,6 +53,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="category.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/serhii-ivchuk-blog/web/category.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.category.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,11 +73,35 @@
       <updated>1633509473674</updated>
       <workItem from="1633509474865" duration="693000" />
       <workItem from="1633605564715" duration="753000" />
-      <workItem from="1633606408205" duration="726000" />
+      <workItem from="1633606408205" duration="4667000" />
+      <workItem from="1633613658850" duration="1353000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit initial">
+      <created>1633608544964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633608544965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit initial" />
   </component>
 </project>
