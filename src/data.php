@@ -32,7 +32,7 @@ function blogGetPost(): array
             'url'         => 'post-1',
             'text' => 'Post 1 Description',
             'author' => 'Author1',
-            'date'       => '10.03.21'
+            'date'       => '10.03.07'
         ],
         2 => [
             'post_id'  => 2,
@@ -40,7 +40,7 @@ function blogGetPost(): array
             'url'         => 'post-2',
             'text' => 'Post2 Description',
             'author' => 'Author2',
-            'date'       => '10.03.21'
+            'date'       => '10.03.98'
         ],
         3 => [
             'post_id'  => 3,
@@ -48,7 +48,7 @@ function blogGetPost(): array
             'url'         => 'post-3',
             'text' => 'Post 3 Description',
             'author' => 'Author3',
-            'date'       => '10.03.21'
+            'date'       => '10.03.95'
         ],
         4 => [
             'post_id'  => 4,
@@ -56,7 +56,7 @@ function blogGetPost(): array
             'url'         => 'post-4',
             'text' => 'Post 4 Description',
             'author' => 'Author4',
-            'date'       => '10.03.21'
+            'date'       => '10.03.96'
         ],
         5 => [
             'post_id'  => 5,
@@ -64,7 +64,7 @@ function blogGetPost(): array
             'url'         => 'post-5',
             'text' => 'Post 5 Description',
             'author' => 'Author5',
-            'date'       => '10.03.21'
+            'date'       => '10.03.93'
         ],
         6 => [
             'post_id'  => 6,
@@ -72,7 +72,7 @@ function blogGetPost(): array
             'url'         => 'post-6',
             'text' => 'Post 6 Description',
             'author' => 'Author6',
-            'date'       => '10.03.21'
+            'date'       => '10.03.01'
         ]
     ];
 }
@@ -120,4 +120,31 @@ function blogGetCategoryPost(int $categoryId): array
     }
 
     return $postsForCategory;
+}
+
+function blogGetNewPosts(): array
+{
+    $postArr=blogGetPost();
+    $keyArr=[];
+    $outArr=[];
+    $currentTime=time();
+    foreach($postArr as $instanceArr){
+        $key=$currentTime - strtotime($instanceArr['date']);
+        $keyArr[$key] =$instanceArr;
+    }
+    ksort($keyArr);
+   $flag=0;
+   foreach($keyArr as $instanceArr){
+      if($flag<3){
+           $outArr[] =$instanceArr;
+            ++$flag;
+        } else {
+            break;
+        }
+   }
+
+
+
+  return $outArr;
+
 }

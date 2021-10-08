@@ -1,32 +1,19 @@
 
-        <section title="Recently Published Posts">
+        <section title="Recently Published Posts:">
             <h2>Recently Published Posts</h2>
             <div class="post-list">
+                <?php foreach (blogGetNewPosts() as $newPost) : ?>
                 <div class="post">
-                    <a href="/post-1-url" title="Post 1">
-                        <img src="/product-placeholder.jpeg" alt="Post 1" width="200"/>
+                    <a href="/<?= $newPost['url'] ?>" title="<?= $newPost['title'] ?>">
+                        <img src="/product-placeholder.jpeg" alt="<?= $newPost['title'] ?>" width="200"/>
                     </a>
-                    <a href="/post-1-url" title="Post 1">Post 1</a>
-                    <span>03.10.21</span>
-                    <a href="/contact-us"><button type="button">Comment</button></a>
-                </div>
+                    <p><a href="/<?= $newPost['url'] ?>" title="<?= $newPost['title'] ?>"><?= $newPost['title'] ?></a></p>
+                    <p>By <span><?= $newPost['author']?></span> </p>
+                    <p><?= $newPost['text'] ?></p>
 
-                <div class="post">
-                        <a href="/post-2-url" title="Post 2">
-                            <img src="/product-placeholder.jpeg" alt="Post 2" width="200"/>
-                        </a>
-                        <a href="/post-2-url" title="Post 2">Post 2</a>
-                        <span>03.10.21</span>
+                    <p> <span><?= $newPost['date']?></span></p>
                     <a href="/contact-us"><button type="button">Comment</button></a>
                 </div>
-
-                <div class="post">
-                            <a href="/post-3-url" title="Post 3">
-                                <img src="/product-placeholder.jpeg" alt="Post 3" width="200"/>
-                            </a>
-                            <a href="/post-3-url" title="Post 3">Post 3</a>
-                            <span>03.10.21</span>
-                    <a href="/contact-us"><button type="button">Comment</button></a>
-                </div>
+                <?php endforeach; ?>
             </div>
         </section>

@@ -15,16 +15,21 @@ require_once '../src/data.php';
 
         .post-list {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .post-list .post {
-            max-width: 30%;
+        .post-list, .post {
+            max-width: 50%;
+        }
+        .post {
+            margin-left: 30px;
         }
     </style>
 </head>
 <body>
 <header>
-    <a href="/" title="Serhii Ivchuk blog">
+    <a href="/" title="serhii.i blog">
         <img src="logo.jpg" alt="Serhii Ivchuk blog  Logo" width="200"/>
     </a>
     <nav>

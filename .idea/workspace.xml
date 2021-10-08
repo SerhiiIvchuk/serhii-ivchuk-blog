@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="13fdd8d5-4ded-4f8b-aef3-35eda350d6f0" name="Changes" comment="Commit initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/apache_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/apache_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/home.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/leavepost.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/post.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +69,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.trial.php">
     <configuration name="category.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/serhii-ivchuk-blog/web/category.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="trial.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/serhii-ivchuk-blog/src/pages/trial.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.trial.php" />
         <item itemvalue="JavaScript Debug.category.php" />
       </list>
     </recent_temporary>
@@ -92,7 +94,8 @@
       <workItem from="1633509474865" duration="693000" />
       <workItem from="1633605564715" duration="753000" />
       <workItem from="1633606408205" duration="4667000" />
-      <workItem from="1633613658850" duration="12561000" />
+      <workItem from="1633613658850" duration="21175000" />
+      <workItem from="1633685254034" duration="3379000" />
     </task>
     <task id="LOCAL-00001" summary="Commit initial">
       <created>1633608544964</created>

@@ -11,6 +11,9 @@ switch ($requestUri) {
     case 'leave-post':
         $page = 'leavepost.php';
         break;
+    case 'about-us':
+        $page = 'trial.php';
+        break;
     default:
         if ($data = blogGetCategoryByUrl($requestUri)) {
             $page = 'category.php';
