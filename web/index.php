@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require_once '../src/Ivchuk/Framework/Autoload.php';
+require_once '../vendor/autoload.php';
 spl_autoload_register([ new \Ivchuk\Framework\Autoload(), 'autoload']);
 $requestDispatcher= new \Ivchuk\Framework\Http\RequestDispatcher([
     new \Ivchuk\Cms\Router()
