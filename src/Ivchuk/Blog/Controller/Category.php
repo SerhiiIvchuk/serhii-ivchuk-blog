@@ -3,6 +3,7 @@ declare(strict_types=1);
 namespace Ivchuk\Blog\Controller;
 class Category implements \Ivchuk\Framework\Http\ControllerInterface
 {
+    private \Ivchuk\Framework\Http\Request $request;
     /**
      * @param \Ivchuk\Framework\Http\Request $request
      */
@@ -13,6 +14,11 @@ class Category implements \Ivchuk\Framework\Http\ControllerInterface
     }
     public function execute(): string
     {
+        $data = $this->request->getParameter('category');
+        $page = 'category.php';
 
+        ob_start();
+        require_once "../src/page.php";
+        return ob_get_clean();
     }
 }
