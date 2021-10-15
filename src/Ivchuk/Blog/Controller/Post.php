@@ -1,7 +1,14 @@
 <?php
 declare(strict_types=1);
-namespace \Ivchuk\Blog\Controller;
-class Post
+namespace Ivchuk\Blog\Controller;
+class Post implements \Ivchuk\Framework\Http\ControllerInterface
 {
+    public function execute(): string
+    {
+        $page = 'post.php';
 
+        ob_start();
+        require_once "../src/page.php";
+        return ob_get_clean();
+    }
 }
