@@ -9,14 +9,18 @@ class Router implements \Ivchuk\Framework\Http\RouterInterface
 {
     private \Ivchuk\Framework\Http\Request $request;
 
+    private Model\Category\Repository $categoryRepository;
     /**
      * @param \Blog\Framework\Http\Request $request
+     * @param Model\Category\Repository $categoryRepository
      */
     public function __construct(
-        \Ivchuk\Framework\Http\Request $request
+        \Ivchuk\Framework\Http\Request $request,
+        \Ivchuk\Blog\Model\Category\Repository $categoryRepository
     ) {
 
         $this->request = $request;
+        $this->categoryRepository=$categoryRepository;
     }
 
     /**
@@ -25,8 +29,8 @@ class Router implements \Ivchuk\Framework\Http\RouterInterface
     public function match(string $requestUrl): string
     {
         require_once '../src/data.php';
-        if ($data = blogGetCategoryByUrl($requestUrl)) {
-            $this->request->setParameter('category', $data);
+        if ($category = $this->categoryRepository->getByUrl($requestUrl)) {
+            $this->request->setParameter('category', $category);
             return Category::class;
         }
 

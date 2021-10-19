@@ -11,12 +11,12 @@ class RequestDispatcher
 
     private Request $request;
 
-    private \DI\Container $container;
+    private \DI\FactoryInterface $factory;
 
     public function __construct(
         array $routers,
         Request $request,
-        \DI\Container $container
+        \DI\FactoryInterface $factory
     ) {
         foreach ($routers as $router) {
             if (!($router instanceof RouterInterface)) {
@@ -26,7 +26,7 @@ class RequestDispatcher
 
         $this->routers = $routers;
         $this->request = $request;
-        $this->container = $container;
+        $this->factory = $factory;
     }
    public  function dispatcher()
    {
@@ -36,7 +36,7 @@ class RequestDispatcher
        foreach ($this->routers as $router) {
            if ($controllerClass = $router->match($requestUrl)) {
 //               $controller = new $controllerClass;
-               $controller = $this->container->get($controllerClass);
+               $controller = $this->factory->get($controllerClass);
                if (!($controller instanceof ControllerInterface)) {
                    throw new \InvalidArgumentException(
                        'Controller $controller must implement ' . ControllerInterface::class

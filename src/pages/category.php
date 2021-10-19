@@ -1,10 +1,11 @@
-
-
+<?php
+/** @var \DVCampus\Catalog\Model\Category\Entity $category */
+?>
 <section title="Posts">
-        <h1><?= $data['name'] ?></h1>
+        <h1><?= $category->getName() ?></h1>
 
             <div class="post-list">
-                <?php foreach (blogGetCategoryPost($data['category_id']) as $post) : ?>
+                <?php foreach (blogGetCategoryPost($category->getCategoryId()) as $post) : ?>
                     <div class="post">
                         <a href="/<?= $post['url'] ?>" title="<?= $post['title'] ?>">
                             <img src="/product-placeholder.jpeg" alt="<?= $post['title'] ?>" width="200"/>
