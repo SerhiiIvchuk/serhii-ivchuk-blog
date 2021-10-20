@@ -1,5 +1,6 @@
 <?php
-/** @var \Ivchuk\Blog\Model\Post\Entity $post */
+/** @var \Ivchuk\Blog\Block\Post $post */
+$post = $block->getPost();
 ?>
 <div class="product-page">
         <img src="product-placeholder.jpeg" alt="<?= $post->getTitle() ?>" width="300"/>
@@ -9,4 +10,3 @@
         <p><span><?= $post->getDate() ?></span></p>
         <a href="/contact-us"><button type="button">Comment</button></a>
 </div>
-

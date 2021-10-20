@@ -1,5 +1,5 @@
 <?php
-require_once '../src/data.php';
+/** @var \Ivchuk\Framework\View\Renderer $this */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,6 @@ require_once '../src/data.php';
         footer {
             border: 1px dashed black;
         }
-
         .post-list {
             display: flex;
             align-items: center;
@@ -33,18 +32,12 @@ require_once '../src/data.php';
         <img src="logo.jpg" alt="Serhii Ivchuk blog  Logo" width="200"/>
     </a>
     <nav>
-        <ul>
-            <?php foreach (blogGetCategory() as $categoryData) : ?>
-                <li>
-                    <a href="/<?= $categoryData['url'] ?>"><?= $categoryData['name'] ?></a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+        <?= $this->render(\DVCampus\Catalog\Block\CategoryList::class) ?>
     </nav>
 </header>
 
 <main>
-    <?php require_once "../src/pages/$page" ?>
+    <?= $this->render($this->getContent()) ?>
 </main>
 
 
