@@ -25,17 +25,17 @@ class Repository
                ->setCategoryId(1)
                ->setName('Work')
                ->setUrl('work')
-               ->setPosts([1, 2, 3]),
+               ->setPostIds([1, 2, 3]),
            2 => $this->makeEntity()
                ->setCategoryId(2)
                ->setName('Home')
                ->setUrl('home')
-               ->setPosts([3, 4, 5]),
+               ->setPostIds([3, 4, 5]),
            3 => $this->makeEntity()
                ->setCategoryId(3)
                ->setName('Free time')
                ->setUrl('freetime')
-               ->setPosts([2, 4, 6]),
+               ->setPostIds([2, 4, 6]),
        ];
    }
     /**

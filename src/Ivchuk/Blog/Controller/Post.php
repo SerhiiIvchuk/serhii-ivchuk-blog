@@ -14,7 +14,8 @@ class Post implements \Ivchuk\Framework\Http\ControllerInterface
     }
     public function execute(): string
     {
-        $data = $this->request->getParameter('post');
+        //$data = $this->request->getParameter('post');
+        $post = $this->request->getParameter('post');
         $page = 'post.php';
 
         ob_start();

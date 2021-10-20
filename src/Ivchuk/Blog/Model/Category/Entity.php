@@ -70,7 +70,7 @@ class Entity
     /**
      * @return array
      */
-    public function getPosts(): array
+    public function getPostIds(): array
     {
         return $this->posts;
     }
@@ -79,7 +79,7 @@ class Entity
      * @param array $posts
      * @return Entity
      */
-    public function setPosts(array $posts): Entity
+    public function setPostIds(array $posts): Entity
     {
         $this->posts = $posts;
         return $this;
