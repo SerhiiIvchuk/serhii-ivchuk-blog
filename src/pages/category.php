@@ -1,5 +1,5 @@
 <?php
-/** @var \DVCampus\Catalog\Model\Category\Entity $category */
+/** @var \Ivchuk\BLog\Model\Category\Entity $category */
 ?>
 <section title="Posts">
         <h1><?= $category->getName() ?></h1>
